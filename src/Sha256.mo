@@ -466,7 +466,7 @@ module {
     };
   }; // class Digest
 
-  // Calculate SHA256 hash digest from [Nat8].
+  // Calculate SHA2 hash digest from [Nat8].
   public func fromArray(algo : Algorithm, arr : [Nat8]) : Blob {
     let digest = Digest(algo);
     digest.writeIter(arr.vals());
